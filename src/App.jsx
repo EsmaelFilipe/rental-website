@@ -5,6 +5,7 @@ import RentalDetailsPage from './pages/RentalDetailsPage';
 import RentalsListPage from './pages/RentalsListPage';
 import rentals from "./assets/data.json";
 import ErrorPage from './pages/errorPage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={<HomePage/>}/>
           <Route path='/rentals/:id' element={<RentalDetailsPage rentals={rentals}/>} />
           <Route path='/rentals/' element={<RentalsListPage/>}/>
+          <Route path='/about' element={<AboutPage/>}/>
           <Route path='/*' element={<ErrorPage/>}/>
         </Routes>
       </div>

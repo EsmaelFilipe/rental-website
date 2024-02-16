@@ -98,23 +98,18 @@ button:focus-visible {
   margin-bottom: 0;
 }
 
-.rental-container {
-  border: 1px solid #ccc;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  width: 500px;
+.discover-button {
+  background-color: rgb(117, 112, 112);
+  color: white
+}
+
+.discover-button:hover{
+  color: #5058f0;
 }
 
 .rental-image {
   max-width: 100%;
   height: 200px;
   margin: 20px;
-}
-
-.rental-container h3 {
-  margin: 5px 0; /* Add margin to the top and bottom of each <h3> */
 }
 
