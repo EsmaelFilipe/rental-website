@@ -1,4 +1,6 @@
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.png";
+import profile from "../assets/profile.png"
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -10,19 +12,19 @@ function Navbar() {
           </button>
         </div>
         <div className="flex justify-start w-1/2 text-center">
-          <span className="text-xl">Rental Company</span>
+          <Link to='/'><span className="text-2xl">UrbNest</span></Link>
         </div>
         <div className="flex-grow"></div> 
         <div>
-          <ul className="flex justify-end mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+          <ul className="flex justify- mb-6 text-gray-500 sm:mb-0 dark:text-gray-400 w-auto">
             <li>
-              <a href="#" className="hover:underline pr-8 text-lg">About</a> 
+              <a href="#" className=" list-items hover:underline pr-10 text-xl">About</a> 
             </li>
             <li>
-              <a href="#" className="hover:underline pr-8 text-lg">Contact</a>
+              <a href="#" className="list-items hover:underline pr-10 text-xl">Contact</a>
             </li>
             <li>
-              <a href="#" className="hover:underline pr-8 text-lg">Placeholder</a>
+            <a href="#"> <img className="profile-logo hover:bg-orange-500 rounded-lg" src={profile} alt=""/></a>
             </li>
           </ul>
         </div>
