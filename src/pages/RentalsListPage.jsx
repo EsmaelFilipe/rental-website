@@ -3,13 +3,17 @@ import rentalsData from "../assets/data.json";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useState } from "react";
+import AddRental from "../components/AddRental";
 
 function RentalsListPage () {    
 
+
     return (
         <div className="page-container">
+             <Navbar/>
             <h2 className="list-title">Available Rentals</h2>
-            <Navbar/>
+         
             {rentalsData.results.map((rental) => {
             return (
                 <div className="rental-container" key={rental.id}>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="dark:bg-gray-900 text-white fixed h-15 shadow-md top-0 left-0 w-full">
+    <nav className="dark:bg-gray-900 text-white h-15 shadow-md top-0 left-0 w-full">
       <div className="flex h-20 items-center px-1 w-full">
         <div className="flex items-start w-auto">
           <Link to='/'><button className="flex text-l bg-gray-900">
@@ -21,10 +21,10 @@ function Navbar() {
               <Link to='/about' className="list-items hover:underline pr-10 text-xl">About</Link> 
             </li>
             <li>
-              <a href="#" className="list-items hover:underline pr-10 text-xl">Contact</a>
+              <Link to="/contact"><p href="#" className="list-items hover:underline pr-10 text-xl">Contact</p></Link>
             </li>
             <li>
-            <a href="#"> <img className="profile-logo hover:bg-orange-500 rounded-lg" src={profile} alt=""/></a>
+            <Link to="/admin"><a href="#"> <img className="profile-logo hover:bg-orange-500 rounded-lg" src={profile} alt=""/></a></Link>
             </li>
           </ul>
         </div>
