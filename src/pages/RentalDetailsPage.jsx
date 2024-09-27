@@ -14,13 +14,13 @@ function RentalDetailsPage () {
     return (
         <div className="flex flex-col min-h-screen w-full">
           <Navbar />
-          <div className="flex-grow m-20">
+          <div className="flex-grow">
             {foundRental ? (
               <section className="text-white body-font overflow-hidden bg-gray-900 w-full flex justify-center">
                 <div className="px-5 py-24">
                   <div className="lg:w-4/5 mx-auto flex flex-wrap">
                     <img
-                      className="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200"
+                      className="lg:w-1/2 w-full object-cover object-center rounded border border-gray-900"
                       src={foundRental.picture_url.url}
                     />
                     <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
@@ -55,7 +55,7 @@ function RentalDetailsPage () {
                           ${foundRental.price}
                         </span>
                         <button className="flex ml-auto text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:text-gray-900 rounded">
-                          Button
+                          Delete Button
                         </button>
                       </div>
                     </div>

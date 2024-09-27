@@ -7,7 +7,7 @@ function Footer () {
 
     return (
       <footer className="fixed-bottom bg-white rounded-lg shadow dark:bg-gray-900 w-full text-center">
-      <div className="w-full p-4 md:py-8 flex flex-col items-center">
+      <div className="w-full p-4 md:py-6 flex flex-col items-center">
         <div className="sm:flex sm:items-center sm:justify-center w-full max-w-4xl">
           <div className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
              <Link to="/" className=" flex items-center"><img src={logo} className="h-8" alt="Logo" /></Link>

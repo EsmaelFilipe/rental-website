@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col w-full bg-gray-900">
+    <div className="min-h-screen flex flex-col w-full bg-gray-900 h-full">
       <Navbar />
-      <div className="flex-grow flex items-center justify-center">
+      <div className="flex-grow flex items-center justify-center m-0">
         <div className=" px-4 lg:px-0 w-full">
-          <div className="flex flex-wrap items-center">
+          <div className="flex flex-wrap items-center justify-center">
             <div className="w-full lg:w-1/2">
-              <div className="max-w-2xl mb-8 m-20">
+              <div className="max-w-2xl ml-16">
                 <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-4xl xl:leading-tight dark:text-white">
                 Welcome to UrbNest: Your Premier Destination for Exceptional Living</h1>
                 <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
@@ -30,7 +30,7 @@ function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="w-full lg:w-1/2">
+            <div className="w-full lg:w-1/3">
               <div className="">
                 <img
                   src={hero}
